@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Обработка данных форм</title>
+    <style>
+        .form_style {
+            height: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .form_fields{
+            margin:5px;
+            height: 20px;
+        }
+        .section_style {
+            margin-top: 10%;
+        }
+        .form_button{
+            height:20px;
+            margin:5px;
+            padding: 2px;
+        }
+        .ul_style{
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-right: 50px;
+        }
+        .li_style{
+            color:white;
+            align-content: center;
+            border-bottom: 5px solid #f40024;
+        }
+    </style>
+</head>
+<body style="background-image: url( theatre.jpg ) !important; height: 100%;vertical-align: center">
+<section class="section_style">
+    <ul class ="ul_style" >
+        <li class="li_style"><center><h1 style="font-size:36px;">Movie Recommender</h1></center></li>
+        <li class="li_style"><center><h3 style="font-size: 24px">Enter Id of your movie and number of recommendation</h3></center><li>
+        <li class="li_style"><center><p style = "font-size: 20px">“Most of the movies are working like, 'Information, cut, information, cut, information, cut' and for them the information is just the story. For me, a lot of things [are] information - I try to involve, to the movie, the time, the space, and a lot of other things - which is a part of our life but not connecting directly to the story-telling. And I'm working on the same way - 'information, cut, information, cut,' but for me the information is not only the story.” </p></center></li>
+    </ul>
+
+    <form action="/cgi-bin/form.py" class="form_style">
+        <input type="text" name="TEXT_1" placeholder="movie id" class = "form_fields">
+        <input type="text" name="TEXT_2" placeholder="How many movies" class = "form_fields">
+        <input type="submit" value="Надіслати" class = "form_button">
+    </form>
+</section>
+</body>
+</html>
